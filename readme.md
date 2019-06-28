@@ -3,7 +3,8 @@ I will be putting fixed, modified or created scripts here that are not necessari
 
 # ssh-check-username.py
 Original: https://bugfuzz.com/stuff/ssh-check-username.py<br />
-I had an issue running this script with the current Kali. The problem is with changes to paramiko. See: https://github.com/paramiko/paramiko/issues/1314
+I had an issue running this script with the current Kali. The problem is with changes to paramiko. <br />
+See: https://github.com/paramiko/paramiko/issues/1314
 
 The solution is to replace instances of the text '_handler_table' with '_client_handler_table'.<br />
 I will place the fixed file on this repo.<br />
