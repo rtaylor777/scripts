@@ -9,7 +9,7 @@ The solution is to replace instances of the text '_handler_table' with '_client_
 I will place the fixed file on this repo.
 
 The purpose of this script is to use a recent vulnerability, CVE-2018-15473, to enumerate users on a system through ssh.
-Usage:
+Usage:<br />
 root@kali:/media/veracrypt1/2_linux/9F18c/scripts/python# python ssh-check-username.py 10.0.0.20 bob
 [*] Invalid username
 root@kali:/media/veracrypt1/2_linux/9F18c/scripts/python# python ssh-check-username.py 10.0.0.20 root
