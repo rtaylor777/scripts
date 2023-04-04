@@ -27,7 +27,7 @@ The searchsploit tool does not have a feature to search for exploits that have t
 # find_nmap_scripts_todo_with_port
 Sometimes you would like to list out the nmap nfs scripts that have to to with a particular port.
 <br />
-#find_nmap_scripts_todo_with_service_name
+# find_nmap_scripts_todo_with_service_name
 Search for a service name that is provided as an argument to the script and list out the nmap nfs scripts
 that potentially match.
 <br />
