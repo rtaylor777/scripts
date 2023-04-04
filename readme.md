@@ -31,3 +31,11 @@ Sometimes you would like to list out the nmap nfs scripts that have to to with a
 Search for a service name that is provided as an argument to the script and list out the nmap nfs scripts
 that potentially match.
 <br />
+Example:<br />
+<pre>
+./find_nmap_scripts_todo_with_service_name rpcbind
+nfs-ls.nse:-- 111/tcp open  rpcbind
+nfs-showmount.nse:-- 111/tcp open  rpcbind
+rpcinfo.nse:-- 111/tcp open  rpcbind
+</pre>
+<br />
