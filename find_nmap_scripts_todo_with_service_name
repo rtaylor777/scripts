@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author: Robert Taylor
+# Date: February 4, 2023
+if [[ ! "$1" ]]; then
+	echo "Usage: $0 <service name>";
+	echo "Example: $0 ssh";
+	exit 0;
+fi
+item="$1"
+cd /usr/share/nmap/scripts/;
+# This script will only match on about 388 of the 604 scripts.
+egrep -i "[tu][dc]p\sopen\s.*$item" *;
+exit 0;
