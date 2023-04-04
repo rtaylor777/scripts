@@ -1,0 +1,16 @@
+#!/bin/bash
+# Author: Robert Taylor
+# Date: February 3, 2023
+if [[ ! "$1" ]]; then
+	echo "Usage: $0 <port>";
+	echo "Example: $0 587";
+	exit 0;
+fi
+port="$1"
+cd /usr/share/nmap/scripts/;
+# This grep only hit about 204 scripts
+#grep 'nmap -p' * |grep "[^0-9]$port[^0-9]";
+# The egrep below hits on 410 scripts, keep in mind though there are 604 scripts
+# To bad there was no standard for how to document the scripts.
+grep -e"nmap.*[[:space:]]\-p[^a-zA-SV-Z]*[:,[:space:]\-]$port[,[:space:]\-]" -e "nmap.*[[:space:]]-p$port[,[:space:]\-]" *;
+exit 0;
