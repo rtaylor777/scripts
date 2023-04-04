@@ -57,7 +57,7 @@ Matched line from file: windows/remote/15266.txt: port 445/tcp open and the atta
 File Type: Ruby script, ASCII text, with very long lines (746)
 </pre>
 # find_nmap_scripts_todo_with_port
-Sometimes you would like to list out the nmap nfs scripts that have to to with a particular port.
+Sometimes you would like to list out the nmap nse scripts that have to to with a particular port.
 <br />
 Example:<br />
 <pre>
@@ -69,7 +69,7 @@ ntp-monlist.nse:-- nmap -sU -pU:123 -Pn -n --script=ntp-monlist <target>
 <br />
 
 # find_nmap_scripts_todo_with_service_name
-Search for a service name that is provided as an argument to the script and list out the nmap nfs scripts
+Search for a service name that is provided as an argument to the script and list out the nmap nse scripts
 that potentially match.
 <br />
 Example:<br />
