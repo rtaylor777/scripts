@@ -21,5 +21,9 @@ You can optionally specify the port to use:<br />
 [+] Valid username
 
 # find_exploits_todo_with_port
-I created this script to aid in finding exploitdb exploits that may have to do with a particular port.
+I created this script to aid in finding exploitdb exploits that may have to do with a particular port.<br />
 The searchsploit tool does not have a feature to search for exploits that have to do with a particular port.
+<br />
+# find_nmap_scripts_todo_with_port
+Sometimes you would like to list out the nmap nfs scripts that have to to with a particular port.
+<br />
