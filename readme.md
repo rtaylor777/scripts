@@ -20,3 +20,6 @@ You can optionally specify the port to use:<br />
 ./ssh-check-username.py 10.0.0.20 --port 22 root<br />
 [+] Valid username
 
+# find_exploits_todo_with_port
+I created this script to aid in finding exploitdb exploits that may have to do with a particular port.
+The searchsploit tool does not have a feature to search for exploits that have to do with a particular port.
