@@ -11,14 +11,17 @@ I will place the fixed file on this repo.<br />
 
 The purpose of this script is to use a recent vulnerability, CVE-2018-15473, to enumerate users on a system through ssh.<br />
 Usage:<br />
-./ssh-check-username.py 10.0.0.20 bob<br />
-[*] Invalid username<br />
-./ssh-check-username.py 10.0.0.20 root<br />
-[+] Valid username<br />
-
-You can optionally specify the port to use:<br />
-./ssh-check-username.py 10.0.0.20 --port 22 root<br />
+<pre>
+./ssh-check-username.py 10.0.0.20 bob
+[*] Invalid username
+./ssh-check-username.py 10.0.0.20 root
 [+] Valid username
+
+You can optionally specify the port to use:
+./ssh-check-username.py 10.0.0.20 --port 22 root
+[+] Valid username
+</pre>
+<br />
 
 # find_exploits_todo_with_port
 I created this script to aid in finding exploitdb exploits that may have to do with a particular port.<br />
